@@ -10,6 +10,7 @@ group :development, :test do
 	gem 'rspec_api_test'
 	gem 'pry-nav'
 	gem 'pry'
+	gem 'byebug'
 end
 group :production do
 	gem 'rails_12factor'

@@ -21,42 +21,34 @@ EventKit.HomeRoute = Em.Route.extend EventKit.ResetScroll, {
 			})
 
 			open: @store.find('event', {
-				since: yesterday
 				event: 'open'
 			})
 
 			click: @store.find('event',  {
-				since: yesterday
 				event: 'click'
 			})
 
 			bounce: @store.find('event', {
-				since: yesterday
 				event: 'bounce'
 			})
 
 			processed: @store.find('event', {
-				since: yesterday
 				event: 'processed'
 			})
 
 			deferred: @store.find('event', {
-				since: yesterday
 				event: 'deferred'
 			})
 
 			delivered: @store.find('event', {
-				since: yesterday
 				event: 'delivered'
 			})
 
 			dropped: @store.find('event', {
-				since: yesterday
 				event: 'dropped'
 			})
 
 			spamreport: @store.find('event', {
-				since: yesterday
 				event: 'spamreport'
 			})
 		})
