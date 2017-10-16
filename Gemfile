@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'pg'
+
 group :development, :test do
-	gem 'sqlite3'
 	gem 'rspec'
 	gem 'rspec-rails'
 	gem 'factory_girl'
@@ -11,7 +12,6 @@ group :development, :test do
 	gem 'pry'
 end
 group :production do
-	gem 'pg'
 	gem 'rails_12factor'
 end
 

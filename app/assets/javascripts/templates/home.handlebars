@@ -1,5 +1,5 @@
 <h1>Dashboard</h1>
-<p>Welcome to the SendGrid EventKit. Use the search box below to start searching your logs.</p>
+<p>Welcome to the RPX Email Tracking System (beta). Use the search box below to start searching your logs.</p>
 
 <div class="panel panel-default">
     <div class="panel-body">
@@ -10,10 +10,10 @@
 </div>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-2">
     <div class="panel panel-default">
         <div class="panel-heading">
-            Total Events In Past 24 Hours
+            Total Events
         </div>
         <div class="panel-body" style="height: 275px;">
             <span style="text-align: center">
@@ -29,6 +29,165 @@
         </div>
     </div>
   </div>
+  <div class="col-md-2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Total Processed
+        </div>
+        <div class="panel-body" style="height: 275px;">
+            <span style="text-align: center">
+                <h2 style="font-size: 72px; margin-top: 50px; margin-bottom: 0px;">{{model.processed.length}}</h2>
+                <h3>
+                    {{#if model.isPlural}}
+                        Processeds
+                    {{else}}
+                        Processed
+                    {{/if}}
+                </h3>
+            </span>
+        </div>
+    </div>
+  </div> 
+  <div class="col-md-2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Total Delivered
+        </div>
+        <div class="panel-body" style="height: 275px;">
+            <span style="text-align: center">
+                <h2 style="font-size: 72px; margin-top: 50px; margin-bottom: 0px;">{{model.delivered.length}}</h2>
+                <h3>
+                    {{#if model.isPlural}}
+                        Delivereds
+                    {{else}}
+                        Delivered
+                    {{/if}}
+                </h3>
+            </span>
+        </div>
+    </div>
+  </div>   
+  <div class="col-md-2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Total Open
+        </div>
+        <div class="panel-body" style="height: 275px;">
+            <span style="text-align: center">
+                <h2 style="font-size: 72px; margin-top: 50px; margin-bottom: 0px;">{{model.open.length}}</h2>
+                <h3>
+                    {{#if model.isPlural}}
+                        Opens
+                    {{else}}
+                        Open
+                    {{/if}}
+                </h3>
+            </span>
+        </div>
+    </div>
+  </div> 
+  <div class="col-md-2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Total Click
+        </div>
+        <div class="panel-body" style="height: 275px;">
+            <span style="text-align: center">
+                <h2 style="font-size: 72px; margin-top: 50px; margin-bottom: 0px;">{{model.click.length}}</h2>
+                <h3>
+                    {{#if model.isPlural}}
+                        Clicks
+                    {{else}}
+                        Click
+                    {{/if}}
+                </h3>
+            </span>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Total Bounce
+        </div>
+        <div class="panel-body" style="height: 275px;">
+            <span style="text-align: center">
+                <h2 style="font-size: 72px; margin-top: 50px; margin-bottom: 0px;">{{model.bounce.length}}</h2>
+                <h3>
+                    {{#if model.isPlural}}
+                        Bounces
+                    {{else}}
+                        Bounce
+                    {{/if}}
+                </h3>
+            </span>
+        </div>
+    </div>
+  </div>  
+  <div class="col-md-2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Total Deferred
+        </div>
+        <div class="panel-body" style="height: 275px;">
+            <span style="text-align: center">
+                <h2 style="font-size: 72px; margin-top: 50px; margin-bottom: 0px;">{{model.deferred.length}}</h2>
+                <h3>
+                    {{#if model.isPlural}}
+                        Deferreds
+                    {{else}}
+                        Deferred
+                    {{/if}}
+                </h3>
+            </span>
+        </div>
+    </div>
+  </div>  
+  <div class="col-md-2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Total Dropped
+        </div>
+        <div class="panel-body" style="height: 275px;">
+            <span style="text-align: center">
+                <h2 style="font-size: 72px; margin-top: 50px; margin-bottom: 0px;">{{model.dropped.length}}</h2>
+                <h3>
+                    {{#if model.isPlural}}
+                        Droppeds
+                    {{else}}
+                        Dropped
+                    {{/if}}
+                </h3>
+            </span>
+        </div>
+    </div>
+  </div>
+
+ 
+
+  <div class="col-md-2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Total Spam
+        </div>
+        <div class="panel-body" style="height: 275px;">
+            <span style="text-align: center">
+                <h2 style="font-size: 72px; margin-top: 50px; margin-bottom: 0px;">{{model.spamreport.length}}</h2>
+                <h3>
+                    {{#if model.isPlural}}
+                        Spams
+                    {{else}}
+                        Spam
+                    {{/if}}
+                </h3>
+            </span>
+        </div>
+    </div>
+  </div>     
+
+</div>
+
+<div class="row">
   <div class="col-md-6">
     <div class="panel panel-default">
         <div class="panel-heading">
